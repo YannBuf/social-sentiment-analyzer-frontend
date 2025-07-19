@@ -66,13 +66,13 @@ export default function LoginPage() {
               <Brain className="h-8 w-8 text-purple-400" />
               <span className="text-2xl font-bold text-white">SentimentAI</span>
             </div>
-            <CardTitle className="text-2xl text-white">欢迎回来</CardTitle>
-            <CardDescription className="text-gray-300">登录您的账户以继续使用情感分析服务</CardDescription>
+            <CardTitle className="text-2xl text-white">Welcome Back</CardTitle>
+            <CardDescription className="text-gray-300">Log in to your account to continue using the sentiment analysis service</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email" className="text-white">
-                邮箱地址
+                E-mail address
               </Label>
               <div className="relative">
                 <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
@@ -88,7 +88,7 @@ export default function LoginPage() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="password" className="text-white">
-                密码
+                Password
               </Label>
               <div className="relative">
                 <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
@@ -110,25 +110,25 @@ export default function LoginPage() {
               disabled={loading}
               className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
             >
-              {loading ? "登录中..." : "登录"}
+              {loading ? "logging in..." : "log in"}
             </Button>
 
             <div className="relative">
               <Separator className="bg-white/20" />
               <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-900 px-2 text-sm text-gray-400">
-                或者
+                or
               </span>
             </div>
 
             <Button variant="outline" className="w-full bg-transparent border-white/20 text-white hover:bg-white/10">
               <Github className="mr-2 h-4 w-4" />
-              使用 GitHub 登录
+              Sign in with GitHub
             </Button>
 
             <p className="text-center text-sm text-gray-300">
-              还没有账户？{" "}
+              No account yet?{" "}
               <Link href="/signup" className="text-purple-400 hover:text-purple-300">
-                立即注册
+                Sign Up Now
               </Link>
             </p>
           </CardContent>
