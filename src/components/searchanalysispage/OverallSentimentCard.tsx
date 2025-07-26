@@ -30,6 +30,17 @@ export function OverallSentimentCard({
     }
   }
 
+  const getBarClass = () => {
+    switch (label) {
+      case "positive":
+        return "bg-green-400"
+      case "negative":
+        return "bg-red-400"
+      default:
+        return "bg-gray-400"
+    }
+  }
+
   return (
     <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
       <CardHeader>
@@ -61,7 +72,7 @@ export function OverallSentimentCard({
             </div>
             <div className="w-full bg-gray-700 rounded-full h-2">
               <div
-                className="bg-green-400 h-2 rounded-full"
+                className={`${getBarClass()} h-2 rounded-full`}
                 style={{ width: `${score * 100}%` }}
               ></div>
             </div>
