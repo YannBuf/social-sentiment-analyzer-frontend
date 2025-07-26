@@ -35,7 +35,7 @@ export function Breadcrumb() {
 
   const pathSegments = pathname.split("/").filter(Boolean)
 
-  const breadcrumbItems: BreadcrumbItem[] = [{ name: "首页", href: "/" }]
+  const breadcrumbItems: BreadcrumbItem[] = [{ name: "Home", href: "/" }]
 
   let currentPath = ""
   pathSegments.forEach((segment) => {
