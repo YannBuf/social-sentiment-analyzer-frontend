@@ -21,9 +21,9 @@ export function OverallSentimentCard({
 }: OverallSentimentCardProps) {
   const getBadgeClass = () => {
     switch (label) {
-      case "积极":
+      case "positive":
         return "bg-green-500/20 text-green-400"
-      case "消极":
+      case "negative":
         return "bg-red-500/20 text-red-400"
       default:
         return "bg-gray-500/20 text-gray-400"
